@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Primary">#d580e3</color>
+    <color name="Secondary">#000814</color>
+    <color name="Text">#d4d4d4</color>
+
+    <color name="Icon">#e8b9f0</color>
+    <color name="Image">#C54FD9</color>
+    <color name="Photo">#e8b9f0</color>
+    <color name="ungu">#C54FD9</color>
+    <color name="pink">#d580e3</color>
+    <color name="pink2">#e8b9f0</color>
+    <color name="colorPrimary">#3E4346</color>
+    <color name="colorPrimaryDark">#505558</color>
+    <color name="colorAccent">#676C6F</color>
+
+    <!--color meow bottom navigation-->
+    <color name="selectedIconColor">#FFFFFF</color>
+    <color name="defaultIconColor">#FFFFFF</color>
+    <color name="countTextColor">#FFFFFF</color>
+    <color name="countBackgroundColor">#505558</color>
+    <color name="circleColor">#676C6F</color>
+    <color name="backgroundBottomColor">#505558</color>
+    <color name="shadowColor">#CDCDCD</color>
+
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="pinkColor">#FF4081</color>
+    <color name="blackColor">#000000</color>
+    <color name="greyColor">#B8B8B8</color>
+
+</resources>

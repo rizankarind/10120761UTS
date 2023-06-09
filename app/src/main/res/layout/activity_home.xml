@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backg"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar" />
+
+        <RelativeLayout
+            android:background="#0096FF"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="42dp"
+                android:layout_marginRight="42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selamat_datang"
+                        android:fontFamily="@font/bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/bold"
+                        android:text="@string/selamat_melihat_profile_saya"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/saya"
+                        android:layout_gravity="right" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:elevation="36dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginRight="42dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Tentang Saya"
+                        android:textColor="@color/whiteColor"
+                        android:fontFamily="@font/bold"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/aboutme"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="350dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/ungu" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Nama:     Muhamad Rizan Karindra"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="NIM:      10120761"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Kelas:        IF-9"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Jenis Kelamin:        Laki-Laki"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Tempat Kelahiran:     Garut"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Hobi:     Olahraga dan Game"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Makanan Kesukaan:     Cimol"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Minuman Kesukaan:     Jamu Buyung Upik"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Lagu Kesukaan:        BMTH - DROWN"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Film Kesukaan:        Pocong Mumun"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Cita-cita:        Frontend Web"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="#0096FF"
+                        android:padding="15dp"
+                        android:text="Alamat Tinggal:       Jln.Kampung Padi"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/Text">
+
+        <include layout="@layout/main_nav_drawer" />
+    </RelativeLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
